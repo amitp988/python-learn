@@ -1,0 +1,17 @@
+   print("The Model Name is:" + self.model)
+    def drive(self):
+        print("You can drive the bike")
+    def stop(self):
+        print("You can stop the bike")
+class Hero(Bike):
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+        Bike.__init__(self, brand, model)
+        print("Hero instance created")
+a1 = Bike("HONDA", "CBR" )
+a1.drive()
+a1.stop()
+b1 = Hero("HERO", "SPLENDER" )
+b1.drive()
+b1.stop()
