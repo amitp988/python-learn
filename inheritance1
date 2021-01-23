@@ -1,4 +1,9 @@
-   print("The Model Name is:" + self.model)
+class Bike(object):
+    def __init__(self, brand, model):
+        self.brand = brand
+        self.model = model
+        print("The Brand Name is:" + self.brand)
+        print("The Model Name is:" + self.model)
     def drive(self):
         print("You can drive the bike")
     def stop(self):
